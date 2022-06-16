@@ -1,0 +1,17 @@
+name: Deploy AWS Lambda Code
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  # trigger manually
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      AWS_DEFAULT_REGION: us-west-1
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
