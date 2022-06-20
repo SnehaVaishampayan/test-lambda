@@ -5,16 +5,6 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 
-
-def lambda_handler(event, context):
-    print(event)
-    logging.info("event ", event)
-    return {
-        'statusCode': 200,
-        'body': json.dumps('Hello from local Lambda! second update')
-    }
-
-
 # This function is responsible for validation of the request payload while creating Project.
 def validate_project_details(project_details):
     print("In validate_project_details ", project_details)
