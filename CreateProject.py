@@ -1,11 +1,7 @@
 import json
-import uuid
-from datetime import datetime
-import logging
 
-logging.basicConfig(level=logging.INFO)
 
-# This function is responsible for validation of the request payload while creating Project.
+
 def validate_project_details(project_details):
     print("In validate_project_details ", project_details)
     if len(project_details) != 3:
