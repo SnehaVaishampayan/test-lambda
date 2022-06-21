@@ -7,7 +7,7 @@ def lambda_handler(event, context):
         'body': json.dumps('Hello from local Lambda! test22 update')
     }
 def validate_project_details(project_details):
-    print("In validate_project_details ", project_details)
+    print("In validate_project_details trigger changes", project_details)
     if len(project_details) != 3:
         raise Exception("Project details are missing.")
     for each_data in project_details:
