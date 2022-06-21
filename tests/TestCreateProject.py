@@ -1,6 +1,6 @@
 import unittest
 
-import ./CreateProject
+import CreateProject
 from tests.test_constants import error_msg_invalid_pName, fake_project_details_invalid_name, fake_project_details_valid
 
 
