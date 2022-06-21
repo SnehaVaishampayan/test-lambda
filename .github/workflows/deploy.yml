@@ -23,6 +23,5 @@ jobs:
 
     - name: Run test
       run: |
-        coverage run -m ./tests/TestCreateProject.py
-        coverage report
+        python3 -m unittests ./tests/TestCreateProject.py
 
