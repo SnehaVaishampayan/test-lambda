@@ -23,6 +23,6 @@ jobs:
 
     - name: Run test
       run: |
-        coverage run tests/TestCreateProject.py
+        coverage -m run tests/TestCreateProject.py
         coverage report
 
