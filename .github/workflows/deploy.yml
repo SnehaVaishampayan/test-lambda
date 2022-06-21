@@ -23,5 +23,5 @@ jobs:
       
     - name: Run tests
       run: |
-        coverage run tests/TestCreateProject.py
+        python3 tests/TestCreateProject.py
         coverage report
