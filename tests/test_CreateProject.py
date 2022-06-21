@@ -1,6 +1,8 @@
 import unittest
+import importlib
 
-import CreateProject
+CreateProject = importlib.import_module("gsp-create-project")
+
 from tests.test_Constants import error_msg_invalid_pName, fake_project_details_invalid_name, fake_project_details_valid
 
 
