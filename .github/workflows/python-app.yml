@@ -42,5 +42,5 @@ jobs:
 
     - name: Run test
       run: |
-        coverage run pytest
+        coverage run -m test/test_CreateProject.py
         coverage report        
