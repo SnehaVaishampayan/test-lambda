@@ -23,5 +23,5 @@ jobs:
 
     - name: Run test
       run: |
-        python3 -m unittests ./tests/TestCreateProject.py
+        python3 -m unittest ./tests/TestCreateProject.py
 
